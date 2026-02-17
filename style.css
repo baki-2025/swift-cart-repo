@@ -114,7 +114,10 @@ a {
   padding: 0.5rem 1rem;
 }
 
-
+/* ================= FOOTER ================= */
+footer {
+  margin-top: 2rem;
+}
 
 /* ================= RESPONSIVE ================= */
 @media screen and (max-width: 768px){
