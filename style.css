@@ -1,3 +1,40 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background:#f4f4f4;
 }
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+.navbar {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 40px;
+  background:#111;
+  color:white;
+}
+
+.nav-links { display:flex; gap:20px; list-style:none; }
+
+.cart-icon { cursor:pointer; }
+
+.hero {
+  height:60vh;
+  background:url('./assets/banner-image.png') center/cover;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  text-align:center;
+}
+
+.hero button {
+  margin-top:15px;
+  padding:10px 20px;
+  border:none;
+  background:orange;
+  cursor:pointer;
+}
+
+.section { padding:40px; }

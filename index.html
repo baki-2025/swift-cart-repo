@@ -22,6 +22,27 @@ type="text/css" />
 <link rel="stylesheet" href="style.css">
 </head>  
 <body>
-    <h1>SwiftCart</h1>
+    <!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">SwiftCart</div>
+  <ul class="nav-links">
+    <li>Home</li>
+    <li>Products</li>
+    <li>About</li>
+    <li>Contact</li>
+  </ul>
+  <div class="cart-icon" onclick="toggleCart()">
+    🛒 <span id="cart-count">0</span>
+  </div>
+</nav>
+<!-- HERO -->
+<section class="hero">
+  <h1>Best Collection For You</h1>
+  <p>Explore trending products with best deals</p>
+  <button 
+  <!-- onclick="scrollToProducts()" -->
+  >Shop Now</button>
+</section>
+<script src="script.js"></script>
 </body>
 </html>
