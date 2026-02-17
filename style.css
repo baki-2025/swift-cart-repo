@@ -116,8 +116,15 @@ a {
 
 /* ================= FOOTER ================= */
 footer {
-  margin-top: 2rem;
+  width: 100%;
 }
+
+@media (max-width: 640px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+
 
 /* ================= RESPONSIVE ================= */
 @media screen and (max-width: 768px){

@@ -34,7 +34,7 @@ function displayProducts(products){
         <p>⭐ ${p.rating.rate}</p>
         <div class="card-actions justify-between">
           <button onclick="showDetails(${p.id})" class="btn btn-sm">Details</button>
-          <button onclick="addToCart(${p.id})" class="btn btn-primary btn-sm">Add</button>
+          <button onclick="addToCart(${p.id})" class="btn btn-primary btn-sm">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -119,3 +119,6 @@ function scrollToProducts(){
 
 loadProducts();
 loadCategories();
+
+
+document.getElementById("year").innerText = new Date().getFullYear();
