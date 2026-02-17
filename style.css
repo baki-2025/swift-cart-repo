@@ -1,40 +1,132 @@
+/* ========== GLOBAL ========== */
 body {
   font-family: 'Poppins', sans-serif;
-  background:#f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
-* { margin:0; padding:0; box-sizing:border-box; }
+/* Links, buttons reset */
+a {
+  text-decoration: none;
+}
 
+/* ================= NAVBAR ================= */
 .navbar {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 40px;
-  background:#111;
-  color:white;
+  position: sticky;
+  top: 0;
+  z-index: 50;
 }
 
-.nav-links { display:flex; gap:20px; list-style:none; }
+/* Cart count badge tweak */
+#cart-count {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.4rem;
+}
 
-.cart-icon { cursor:pointer; }
-
+/* ================= HERO ================= */
 .hero {
-  height:60vh;
-  background:url('./assets/banner-image.png') center/cover;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  color:white;
-  text-align:center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
 }
 
 .hero button {
-  margin-top:15px;
-  padding:10px 20px;
-  border:none;
-  background:orange;
-  cursor:pointer;
+  margin-top: 1rem;
 }
 
-.section { padding:40px; }
+/* ================= FEATURES ================= */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ================= PRODUCT GRID ================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.card img {
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/* ================= CART SIDEBAR ================= */
+#cart-sidebar {
+  transition: transform 0.3s ease-in-out;
+}
+
+#cart-sidebar.active {
+  transform: translateX(0);
+}
+
+/* ================= LOADER ================= */
+#loader {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+/* ================= MODAL ================= */
+.modal-box img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* ================= NEWSLETTER ================= */
+.newsletter {
+  background: #f5f5f5;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter input {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+@media screen and (max-width: 768px){
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
